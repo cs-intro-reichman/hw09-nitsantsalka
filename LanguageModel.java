@@ -38,6 +38,7 @@ public class LanguageModel {
         if (text == null || (text.length() < windowLength)){
             return;
         }
+        text = text.replace("\r", "");
         for (int i = 0; i < (text.length() - windowLength); i++){
             String window = text.substring(i, i + windowLength);
             char ch = text.charAt(i + windowLength);
