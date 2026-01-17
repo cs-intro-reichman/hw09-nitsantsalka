@@ -34,7 +34,6 @@ public class List {
         Node firstNode = new Node(newFirst);
         firstNode.next = first;
         first = firstNode;
-        size++;
     }
     
     /** GIVE Textual representation of this list. */
@@ -82,7 +81,6 @@ public class List {
         else{
             current.cp.count++;
         }
-
     }
 
     /** GIVE If the given character exists in one of the CharData objects
