@@ -34,6 +34,7 @@ public class List {
         Node firstNode = new Node(newFirst);
         firstNode.next = first;
         first = firstNode;
+        size++;
     }
     
     /** GIVE Textual representation of this list. */
@@ -75,8 +76,7 @@ public class List {
                 current = current.next;
             }
         if (current == null){
-            addFirst(chr);
-            size++;    
+            addFirst(chr);    
         }
         else{
             current.cp.count++;
